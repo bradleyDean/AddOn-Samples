@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!--
+  PLASTICK MAP TEMPLATE
+  =====================
+  HOW TO USE:
+  1. Open in Inkscape
+  2. File > Document Properties > resize to match your reference image
+     (verify viewBox still reads "0 0 WIDTH HEIGHT" in the XML editor)
+  3. Import your reference image (File > Import), lock it on a separate layer
+  4. Draw walls in Layer 1 using the Pen tool (P key)
+     - Each wall path MUST have: class="wall" and id like "0a0" (floor+letter+segment)
+     - WARNING: Check that Layer 1 has NO transform attribute after drawing.
+       Inkscape sometimes adds one - remove it in the XML editor if present.
+  5. Resize the frame rect to cover your map area
+  6. Move the legend group to a corner that does not overlap walls
+  7. Delete the placeholder wall path
+  8. Save as Plain SVG for use in the app
+-->
+<svg
+   width="200mm"
+   height="200mm"
+   viewBox="0 0 200 200"
+   version="1.1"
+   id="svg1"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.0"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1" />
+
+  <defs id="defs1" />
+
+  <!-- LAYER 1 - Draw all walls here.
+       WARNING: This g element MUST NOT have a transform attribute. -->
+  <g
+     id="layer1"
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer">
+
+    <!-- PLACEHOLDER WALL - delete this and draw your own.
+         Required attributes on every wall path:
+           class="wall"
+           id="[floor][wallLetter][segmentIndex]"  e.g. 0a0, 0a1, 0b0, 1a0
+         Copy the style below for consistent appearance. -->
+    <path
+       class="wall"
+       id="0a0"
+       d="M 20,20 H 180"
+       style="fill:none;stroke:#121036;stroke-width:1.574;stroke-dasharray:none;stroke-opacity:1" />
+
+    <!-- Legend group - decorative only, transform here is fine -->
+    <g
+       id="legend"
+       transform="translate(4, 170)">
+      <!-- Sample wall line -->
+      <path
+         d="M 2,8 H 18"
+         style="fill:none;stroke:#121036;stroke-width:1.574;stroke-dasharray:none;stroke-opacity:1"
+         id="legend-wall-line" />
+      <!-- Sample pin - app reads class="sample-pin" for pin styling -->
+      <circle
+         class="sample-pin"
+         id="legend-pin"
+         cx="8"
+         cy="18"
+         r="2"
+         style="fill:none;stroke:#21ff6b;stroke-width:0.45;stroke-opacity:1" />
+      <!-- Legend border -->
+      <rect
+         id="legend-border"
+         x="0"
+         y="0"
+         width="28"
+         height="24"
+         style="fill:none;stroke:#333333;stroke-width:0.3;stroke-opacity:0.5" />
+    </g>
+
+  </g>
+
+  <!-- FRAME RECT - defines pan/zoom boundaries.
+       MUST stay here at root level, outside all groups.
+       Resize x/y/width/height to match your map area.
+       WARNING: Do NOT move this inside any g element. -->
+  <rect
+     class="frame"
+     id="frame_0"
+     frameName="global"
+     floor="0"
+     x="1"
+     y="1"
+     width="198"
+     height="198"
+     style="fill:none;stroke:#333333;stroke-width:0.3;stroke-opacity:0.5" />
+
+</svg>
