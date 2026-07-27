@@ -12,32 +12,24 @@ A typical route starts with a **photo of the wall**, with **hold markers** drawn
 <table align="center">
   <tr>
     <td align="center" width="50%">
-      <div style="display: inline-block; border-radius: 28px; overflow: hidden; line-height: 0;">
-        <img src="ScreenShots/17%20Pro%20Feed%20Bow%20to%20The%20Prow.png" width="260" alt="Feed: gym map and route carousel" />
-      </div>
+      <img src="ScreenShots/rounded/17%20Pro%20Feed%20Bow%20to%20The%20Prow.png" width="260" alt="Feed: gym map and route carousel" />
       <br />
       <sub>Feed — map and route carousel</sub>
     </td>
     <td align="center" width="50%">
-      <div style="display: inline-block; border-radius: 28px; overflow: hidden; line-height: 0;">
-        <img src="ScreenShots/17%20Pro%20Annotate%20Photo%20Screen.png" width="260" alt="Route editor: annotating holds on a wall photo" />
-      </div>
+      <img src="ScreenShots/rounded/17%20Pro%20Annotate%20Photo%20Screen.png" width="260" alt="Route editor: annotating holds on a wall photo" />
       <br />
       <sub>Route editor — hold annotation</sub>
     </td>
   </tr>
   <tr>
     <td align="center" width="50%">
-      <div style="display: inline-block; border-radius: 28px; overflow: hidden; line-height: 0;">
-        <img src="ScreenShots/17%20Pro%20Detail%20Screen%20With%20Send%20Status%20Etc.png" width="260" alt="Route detail with send status and stats" />
-      </div>
+      <img src="ScreenShots/rounded/17%20Pro%20Detail%20Screen%20With%20Send%20Status%20Etc.png" width="260" alt="Route detail with send status and stats" />
       <br />
       <sub>Route detail — progress and stats</sub>
     </td>
     <td align="center" width="50%">
-      <div style="display: inline-block; border-radius: 28px; overflow: hidden; line-height: 0;">
-        <img src="ScreenShots/17%20Pro%20Filters.png" width="260" alt="Filter routes by grade, style, and attributes" />
-      </div>
+      <img src="ScreenShots/rounded/17%20Pro%20Filters.png" width="260" alt="Filter routes by grade, style, and attributes" />
       <br />
       <sub>Filters — find routes by attribute</sub>
     </td>
