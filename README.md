@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="ScreenShots/rounded/Logo-Header.png" width="640" alt="AddOn logo" />
+</p>
+
 # AddOn-Samples
 
 This repository contains public code samples extracted from AddOn. The full repo is private (it supports an in-progress project). These excerpts show how specific engineering problems were solved.
